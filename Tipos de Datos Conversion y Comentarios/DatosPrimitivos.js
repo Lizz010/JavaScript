@@ -12,7 +12,7 @@ let Bool1 = Boolean(true);
 let Num = 10;
 let Num1 = Number(100);
 
-let Bgn = 10 n;
+let Bgn = 10n;
 let Bgn1 = (100);
 
 let Str = "Hello Dev";
