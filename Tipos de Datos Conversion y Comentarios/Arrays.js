@@ -57,7 +57,7 @@ let users =[
         }
 ];
 console.log(users[0].name); // -> Liz
-console.log(users[1].age); // -> 21
+console.log(users[1].age); // -> 110
 console.log(users[2].name) // -> Evan
 
 // --------------------------------------
