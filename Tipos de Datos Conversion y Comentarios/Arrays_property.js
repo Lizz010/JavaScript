@@ -1,5 +1,8 @@
 // PROPERTY LENGTH
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac6c0f9 (Putting comments to the file)
 // Imprimiendo longitud del array
 let names  = ["Evan", "Liz", "Asa", "Emma"];
 console.log(names.length); // -> 4
