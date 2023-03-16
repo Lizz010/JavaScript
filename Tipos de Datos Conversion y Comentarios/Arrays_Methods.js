@@ -48,3 +48,18 @@ let name = names.pop();
 console.log(names.length); // -> 3
 console.log(name); // -> Ruby
 console.log(names); // -> ["Liz", "Evan", "Emma"]
+
+//METHOD SHIFT
+/*El método shift funciona de manera similar a pop, solo que esta
+vez eliminamos el elemento del inicio del arreglo (con el índice 0).
+El método devuelve el elemento eliminado y todos los demás
+elementos se desplazan hacia la izquierda, llenando el espacio
+vacío. La longitud del arreglo original se reduce en 1.*/
+let names = ["Lizz", "Evan", "Amme", "Asa"];
+console.log(names.length); // -> 4
+
+let name = names.shift();
+console.log(names.length); // -> 3
+console.log(name); // -> Lizz
+console.log(names); // -> ["Evan", "Amme", "Asa"]
+
