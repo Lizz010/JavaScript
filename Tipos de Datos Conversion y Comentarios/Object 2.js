@@ -32,4 +32,29 @@ var MiObjeto = { //Creando el objeto
     fecha: new Date()
 }
 console.log(MiObjeto.otroObjeto.nombre) //Accediendo a clave de dicho objecto
-console.log(MiObjeto.fecha.getFullYear()) //Axcediendo al año actual
+console.log(MiObjeto.fecha.getFullYear()) //Accediendo al año actual
+/////////////////////////////////////////////////////////////////////////////
+
+// Otras forma de acceder a los valores de un objeto
+var{nombre} = MiObjeto() //Desestructuracion de un objeto
+console.log(nombre)
+
+// --------------------------------
+var {nombre} = MiObjeto()
+
+var otraFuncion({edad},{otroObjeto}) => { //Creando una funcion donde se llaman valores de objetos
+    console.log(otroObjeto.texto) //Imprimiendo valores de objetos 
+    console.log(edad) //Imprimiendo valores de objetos
+}
+
+otraFuncion(miObjeto,miObjeto) //Llamando la funcion
+
+// --------------------------------
+var {nombre} = MiObjeto()
+
+var otraFuncion(edad,{otroObjeto}) => { //Creando una funcion donde se llaman valores de objetos
+    console.log(otroObjeto.texto) //Imprimiendo valores de objetos
+    console.log(edad) //Imprimiendo valores de objetos
+}
+
+otraFuncion(miObjeto.edad,miObjeto) //Accediendo a la clave del objeto atravez de la funcion
