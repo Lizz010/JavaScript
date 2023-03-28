@@ -19,19 +19,17 @@ let tickect = {
     to: "Las Nubes",
     price: 1500
 };
-console.log(tickect.from);
-console.log(tickect.to);
-console.log(tickect.price);
+console.log(`Tickect from: ${tickect.from}`);
+console.log(`Tickect to: ${tickect.to}`);
+console.log(`Tickect price: ${tickect.price}`);
 /*Declara un objeto vacío y guárdalo en la variable person. Usando
 la notación de punto, agrega los campos firstName y lastName al
 objeto ingresando tus datos como valores. Intenta mostrar los
 campos individuales en la consola.*/
-var person = {
-    firstName: "Lizz",
-    lastName: "Pemberthy"
-}
-console.log(person.firstName);
-console.log(person.lastNames);
+let person = {};
+person.name = "Liz";
+person.surname = "Pemberthy";
+console.log(`${person.name} ${person.surname}`);
 //Arrays
 /*Estamos creando una pequeña biblioteca de libros sobre
 programación en JavaScript. Tenemos tres libros y queremos
@@ -43,7 +41,7 @@ libro: el título, el autor y el número de páginas:
 /*Crea un arreglo de tres objetos que representen los libros.
 Cada objeto debe tener las siguientes propiedades: título,
 autor, páginas.*/
-Libros = [{
+ let Libros = [{
     titulo: "Speaking JavaScript",
     autor: "Axel Rauschmayer",
     paginas: 460
@@ -72,3 +70,18 @@ console.log(Libros[0].titulo);
 console.log(Libros[1].titulo);
 console.log(Libros[2].titulo);
 console.log(Libros[3].titulo);
+/*Utiliza el comando slice para copiar los dos últimos libros al
+nuevo arreglo.*/
+let newbks = Libros.slice(-2);
+/*El primer libro de la colección se pierde en circunstancias inexplicables.
+Ya has aceptado la pérdida, así que ahora elimínalo del arreglo.
+¿Cuál método usarás para este propósito? Muestra la longitud del arreglo
+y todos los nombres de los libros de la colección a su vez.*/
+Libros.shift();
+console.log(Libros.length);
+console.log(Libros[0].titulo);
+console.log(Libros[1].titulo);
+console.log(Libros[2].titulo);
+/*Muestra la suma de las páginas de todos los libros de la colección.*/
+let sum = (Libros[0].paginas + Libros[1].paginas + Libros[2].paginas);
+console.log(`Paginas: ${sum}`);
