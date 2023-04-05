@@ -20,17 +20,17 @@ for (i = 0; i < frutas.length; i++) {
 // Ejecutando ciclo for con objetos -------------------------
 // Objetos
 var persona1 = {
-    codigo: 100
+    codigo: 100,
     nombre: Evan,
     profesion: Actor
 }
 var persona2 = {
-    codigo: 101
+    codigo: 101,
     nombre: Maeve,
     profesion: Escritora
 }
 var persona3 = {
-    codigo: 102
+    codigo: 102,
     nombre: Cole,
     profesion: Estudiante
 }
@@ -42,17 +42,17 @@ for (i = 0; personas.length; i++) {
 }
 // Usando "break" para romper un ciclo for ----------------------
 var persona1 = {
-    codigo: 100
+    codigo: 100,
     nombre: Evan,
     profesion: Actor
 }
 var persona2 = {
-    codigo: 101
+    codigo: 101,
     nombre: Maeve,
     profesion: Escritora
 }
 var persona3 = {
-    codigo: 102
+    codigo: 102,
     nombre: Cole,
     profesion: Estudiante
 }
