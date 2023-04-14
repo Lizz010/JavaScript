@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Map</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Objeto de peliculas con sus atributos
+        pelicula1 = { titulo: "One day", anio: 2015, valoracion: 4 }
+        pelicula2 = { titulo: "La Momia", anio: 2012, valoracion: 5 }
+        pelicula3 = { titulo: "Los ilusionistas", anio: 2016, valoracion: 4 }
+        pelicula4 = { titulo: "Terminator", anio: 2010, valoracion: 4 }
+        pelicula5 = { titulo: "Intensamente", anio: 2018, valoracion: 3 }
+        // Arreglo de peliculas
+        peliculas = [pelicula1, pelicula2, pelicula3, pelicula4, pelicula5]
+        // Asignando suma de valoraciona "sumval" segun lo que se cumpla en las sentencias del array function
+        let sumval = ({ valoracion }) => valoracion >= 5 ? valoracion += 1 : valoracion += 0
+        // Agregando la suma a var "total" con metodo .map
+        let total = peliculas.map(sumval)
+        // Imprimiendo resultado
+        console.log(total)
+    </script>
+</body>
+
+</html>
