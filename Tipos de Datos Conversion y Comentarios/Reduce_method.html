@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Method</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //Objeto de las peliculas con sus atributos
+        pelicula1 = { titulo: "One day", anio: 2015, valoracion: 4 }
+        pelicula2 = { titulo: "La Momia", anio: 2012, valoracion: 5 }
+        pelicula3 = { titulo: "Los ilusionistas", anio: 2016, valoracion: 4 }
+        pelicula4 = { titulo: "Terminator", anio: 2010, valoracion: 4 }
+        pelicula5 = { titulo: "Intensamente", anio: 2018, valoracion: 3 }
+        //Array de peliculas
+        peliculas = [pelicula1, pelicula2, pelicula3, pelicula4, pelicula5]
+        //Creando un nuevo objeto para asignar la nueva valoracion
+        let Objval = ({ valoracion }) => {
+            valoracion >= 5 ? valoracion += 1 : valoracion += 0 //Definiendo con sentencia "if"
+            let Obj = {} //Creando un nuevo objeto
+            Obj["valoracion"] = valoracion//Asignandole "valoracion" a nuevo objeto
+            return Obj//Retornando objeto
+        }
+
+        let newval = peliculas.map(Objval)
+        //Se declara variable "redval" asginandola como una funcion que contiene un
+        //acumulador y el atributo valoracion
+        let redval = (acum, { valoracion }) => acum + valoracion
+        //A variable "totval" le asignamos el resultado de metodo reduce()
+        let totval = peliculas.reduce(redval, 0)
+        //Imprimimos el total del valor
+        console.log(totval)
+        //Imprimimos array "peliculas"
+        console.log(peliculas)
+        //Imprimimos Objeto de la nueva valoracion
+        console.log(newval)
+
+
+
+    </script>
+</body>
+
+</html>
