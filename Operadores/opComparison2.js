@@ -47,6 +47,32 @@ console.log(0 == false); // -> true
 console.log(undefined == false); // -> false
 console.log(NaN == NaN); // -> false
     
+/*¡Recuerda! Utiliza el operador de identidad a menos que permitas intencionalmente una comparación positiva
+entre los diferentes tipos de datos.
+
+También hay operadores complementarios a los que acabamos de demostrar: el operador de no identidad !== y
+el operador de desigualdad !=. El primero devuelve true si los operandos no son idénticos, es decir, son iguales
+pero de diferente tipo, o simplemente son diferentes. El segundo devuelve true si los operandos son
+diferentes. */
+
+ console.log(10 !== 5); // -> true
+console.log(10 !== 10); // -> false
+console.log(10 !== 10n); // -> true
+console.log(10 !== "10"); // -> true
+console.log("10" !== "10"); // -> false
+console.log("Lizz" !== "Bob"); // -> true
+console.log(0 !== false); // -> true
+console.log(undefined !== false); // -> true
+console.log(10 != 5); // -> true
+console.log(10 != 10); // -> false
+console.log(10 != 10n); // -> false
+console.log(10 != "10"); // -> false
+console.log("10" != "10"); // -> false
+console.log("Lizz" != "Bob"); // -> true
+console.log(0 !=  false); // -> false
+console.log(undefined != false); // -> true
+console.log(NaN != NaN); // -> true
+    
 
 
 
