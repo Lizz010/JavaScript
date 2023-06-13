@@ -72,7 +72,25 @@ console.log("Lizz" != "Bob"); // -> true
 console.log(0 !=  false); // -> false
 console.log(undefined != false); // -> true
 console.log(NaN != NaN); // -> true
+
+/*También tenemos operadores que nos permiten comprobar si uno de los operandos es mayor que >,
+menor que <, mayor o igual que  >=, y menor o igual que <=. Estos operadores funcionan en cualquier tipo de
+operando, pero tiene sentido usarlos solo en números o valores que se convertirán correctamente en números.*/
+
+console.log(10 > 100); // -> false
+console.log(101 > 100); // -> true
+console.log(101 > "100"); // -> true
+
+console.log(101 < 100); // -> false
+console.log(100n < 102); // -> true
+console.log("10" < 20n); // -> true
+
+console.log(101 <= 100); // -> false
+console.log(10 >= 10n); // -> true
+console.log("10" <=  20); // -> true
     
+
+
 
 
 
