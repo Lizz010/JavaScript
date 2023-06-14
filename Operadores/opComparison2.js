@@ -18,7 +18,7 @@ o el operador de igualdad ==.
 El primero es más restrictivo y, para devolver verdadero, los operandos deben ser
 idénticos (es decir, deben ser iguales y del mismo tipo). */
 
-//Example:
+//Igualdad Extricta Example:
 console.log(10 === 5); // -> false
 console.log(10 === 10); // -> true
 console.log(10 === 10n); // -> false
@@ -36,7 +36,7 @@ Toma en cuenta que si alguno de los operandos tiene un valor NaN (o se ha conver
 con undefined), el operador de igualdad devolverá false
 .*/
 
-//Example:
+//Igualdad Example:
 console.log(10 == 5); // -> false
 console.log(10 == 10); // -> true
 console.log(10 == 10n); // -> true
@@ -55,6 +55,7 @@ el operador de desigualdad !=. El primero devuelve true si los operandos no son 
 pero de diferente tipo, o simplemente son diferentes. El segundo devuelve true si los operandos son
 diferentes. */
 
+//Desigualdad Extricta Example:
  console.log(10 !== 5); // -> true
 console.log(10 !== 10); // -> false
 console.log(10 !== 10n); // -> true
@@ -63,6 +64,8 @@ console.log("10" !== "10"); // -> false
 console.log("Lizz" !== "Bob"); // -> true
 console.log(0 !== false); // -> true
 console.log(undefined !== false); // -> true
+
+//Igualdad Extricta Example:
 console.log(10 != 5); // -> true
 console.log(10 != 10); // -> false
 console.log(10 != 10n); // -> false
@@ -89,6 +92,11 @@ console.log(101 <= 100); // -> false
 console.log(10 >= 10n); // -> true
 console.log("10" <=  20); // -> true
     
+//OTHERS OPERATORS
+//typeof = Saber el tipo de dato de una variable
+//intanceof = Saber si un objeto instancia de una clase en particular o de alguna clase heredada
+//delete = Eliminar propiedad o elemento de un objeto o array
+//ternary = Forma concisa de escribir una declaracion condicional
 
 
 
