@@ -93,8 +93,41 @@ console.log(10 >= 10n); // -> true
 console.log("10" <=  20); // -> true
     
 //OTHERS OPERATORS
-//typeof = Saber el tipo de dato de una variable
-//intanceof = Saber si un objeto instancia de una clase en particular o de alguna clase heredada
+//typeof = Saber el tipo de dato de una variable EX:
+let year = 10000;
+console.log(typeof year); // -> number
+console.log(typeof false); // -> boolean
+
+//intanceof = Saber si un objeto instancia de una clase en particular o de alguna clase heredada EX:
+class Vehiculo {
+    conducir() {
+      console.log("Conduciendo el vehículo...");
+    }
+  }
+  
+  class Coche extends Vehiculo {
+    frenar() {
+      console.log("Frenando el coche...");
+    }
+  }
+  
+  class Moto extends Vehiculo {
+    acelerar() {
+      console.log("Acelerando la moto...");
+    }
+  }
+  
+  const miCoche = new Coche();
+  const miMoto = new Moto();
+  
+  console.log(miCoche instanceof Vehiculo);  // Salida: true
+  console.log(miCoche instanceof Coche);     // Salida: true
+  console.log(miCoche instanceof Moto);      // Salida: false
+  
+  console.log(miMoto instanceof Vehiculo);   // Salida: true
+  console.log(miMoto instanceof Coche);      // Salida: false
+  console.log(miMoto instanceof Moto);       // Salida: true
+  
 //delete = Eliminar propiedad o elemento de un objeto o array
 //ternary = Forma concisa de escribir una declaracion condicional
 
