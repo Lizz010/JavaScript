@@ -46,7 +46,7 @@ console.log("Lizz" == "Bob"); // -> false
 console.log(0 == false); // -> true
 console.log(undefined == false); // -> false
 console.log(NaN == NaN); // -> false
-    
+
 /*¡Recuerda! Utiliza el operador de identidad a menos que permitas intencionalmente una comparación positiva
 entre los diferentes tipos de datos.
 
@@ -56,7 +56,7 @@ pero de diferente tipo, o simplemente son diferentes. El segundo devuelve true s
 diferentes. */
 
 //Desigualdad Extricta Example:
- console.log(10 !== 5); // -> true
+console.log(10 !== 5); // -> true
 console.log(10 !== 10); // -> false
 console.log(10 !== 10n); // -> true
 console.log(10 !== "10"); // -> true
@@ -72,7 +72,7 @@ console.log(10 != 10n); // -> false
 console.log(10 != "10"); // -> false
 console.log("10" != "10"); // -> false
 console.log("Lizz" != "Bob"); // -> true
-console.log(0 !=  false); // -> false
+console.log(0 != false); // -> false
 console.log(undefined != false); // -> true
 console.log(NaN != NaN); // -> true
 
@@ -90,8 +90,8 @@ console.log("10" < 20n); // -> true
 
 console.log(101 <= 100); // -> false
 console.log(10 >= 10n); // -> true
-console.log("10" <=  20); // -> true
-    
+console.log("10" <= 20); // -> true
+
 //OTHERS OPERATORS
 //typeof = Saber el tipo de dato de una variable EX:
 let year = 10000;
@@ -100,36 +100,48 @@ console.log(typeof false); // -> boolean
 
 //intanceof = Saber si un objeto instancia de una clase en particular o de alguna clase heredada EX:
 class Vehiculo {
-    conducir() {
-      console.log("Conduciendo el vehículo...");
-    }
+  conducir() {
+    console.log("Conduciendo el vehículo...");
   }
-  
-  class Coche extends Vehiculo {
-    frenar() {
-      console.log("Frenando el coche...");
-    }
+}
+
+class Coche extends Vehiculo {
+  frenar() {
+    console.log("Frenando el coche...");
   }
-  
-  class Moto extends Vehiculo {
-    acelerar() {
-      console.log("Acelerando la moto...");
-    }
+}
+
+class Moto extends Vehiculo {
+  acelerar() {
+    console.log("Acelerando la moto...");
   }
-  
-  const miCoche = new Coche();
-  const miMoto = new Moto();
-  
-  console.log(miCoche instanceof Vehiculo);  // Salida: true
-  console.log(miCoche instanceof Coche);     // Salida: true
-  console.log(miCoche instanceof Moto);      // Salida: false
-  
-  console.log(miMoto instanceof Vehiculo);   // Salida: true
-  console.log(miMoto instanceof Coche);      // Salida: false
-  console.log(miMoto instanceof Moto);       // Salida: true
-  
-//delete = Eliminar propiedad o elemento de un objeto o array
-//ternary = Forma concisa de escribir una declaracion condicional
+}
+
+const miCoche = new Coche();
+const miMoto = new Moto();
+
+console.log(miCoche instanceof Vehiculo);  // Salida: true
+console.log(miCoche instanceof Coche);     // Salida: true
+console.log(miCoche instanceof Moto);      // Salida: false
+
+console.log(miMoto instanceof Vehiculo);   // Salida: true
+console.log(miMoto instanceof Coche);      // Salida: false
+console.log(miMoto instanceof Moto);       // Salida: true
+
+//delete = Eliminar propiedad o elemento de un objeto o array EX:
+let user = {
+  name: "Evan",
+  age: 38
+};
+console.log(user.age); // -> 38
+delete user.age;
+console.log(user.age); // -> undefined
+
+//ternary = Forma concisa de escribir una declaracion condicional EX:
+const edad = 20;
+const esMayorDeEdad = edad >= 18 ? "Sí" : "No";
+//Se lee "si la edad es mayor o igual a 18, entonces "Sí" de lo contrario "No"
+
 
 
 
